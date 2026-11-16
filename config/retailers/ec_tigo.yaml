@@ -1,0 +1,15 @@
+country: EC
+retailer_name: TIGO
+type: operator
+base_url: https://www.tigo.com.ec
+currency: USD
+locale: es-EC
+row_format: ec_tigo
+promo_types: [Special discount]  # plan-renewal prices (W44 wording)
+notes: "Formerly Movistar. robots.txt disallows query strings (/*?): filter /celulares by name."
+brands:
+  Samsung:  {urls: ["https://www.tigo.com.ec/celulares"], mode: dom, capture: cards, max_products: 5, filter_by_name: true, selectors: {product_card: 'div.rounded-lg.shadow-md:has(h2)', name: 'h2'}}
+  Apple:    {urls: ["https://www.tigo.com.ec/celulares"], mode: dom, capture: cards, max_products: 5, filter_by_name: true, selectors: {product_card: 'div.rounded-lg.shadow-md:has(h2)', name: 'h2'}}
+  Honor:    {urls: ["https://www.tigo.com.ec/celulares"], mode: dom, capture: cards, max_products: 5, filter_by_name: true, selectors: {product_card: 'div.rounded-lg.shadow-md:has(h2)', name: 'h2'}}
+  Motorola: {urls: ["https://www.tigo.com.ec/celulares"], mode: dom, capture: cards, max_products: 5, filter_by_name: true, selectors: {product_card: 'div.rounded-lg.shadow-md:has(h2)', name: 'h2'}}
+pre_actions: [{close_cookies: true}, {wait_for: networkidle}, {scroll: progressive}]

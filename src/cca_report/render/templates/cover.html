@@ -1,0 +1,5 @@
+<section class="slide cover" data-slide-id="{{ s.id }}">
+  <div class="title">{% for line in s.title_lines %}{{ line }}{% if not loop.last %}<br>{% endif %}{% endfor %}</div>
+  <div class="date">{{ s.date_label }}</div>
+  {% if logo %}<div class="logo"><img src="{{ logo }}" alt="Cheil"></div>{% else %}<div class="logo-text">Cheil</div>{% endif %}
+</section>

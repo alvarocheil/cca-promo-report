@@ -1,0 +1,15 @@
+country: PY
+retailer_name: Tupi
+type: retailer
+base_url: https://www.tupi.com.py
+currency: PYG
+locale: es-PY
+row_format: py_default
+preferred_installments: 15
+pages_per_brand_max: 2
+brands:
+  Samsung:  {urls: ["https://www.tupi.com.py/lineas/151/Celulares/"], mode: dom, capture: cards, max_products: 6, filter_by_name: true}
+  Apple:    {urls: ["https://www.tupi.com.py/lineas/151/Celulares/"], mode: dom, capture: cards, max_products: 6, filter_by_name: true}
+  Honor:    {urls: ["https://www.tupi.com.py/lineas/151/Celulares/"], mode: dom, capture: cards, max_products: 6, filter_by_name: true}
+  Motorola: {urls: ["https://www.tupi.com.py/lineas/151/Celulares/"], mode: dom, capture: cards, max_products: 6, filter_by_name: true}
+pre_actions: [{close_cookies: true}, {wait_for: networkidle}, {scroll: progressive}]

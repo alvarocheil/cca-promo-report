@@ -1,0 +1,7 @@
+  <div class="country-bar"><span>{{ s.country_name }}</span></div>
+  <div class="retailer-name fit" data-min="11" data-max="18">{{ s.retailer }}</div>
+  <div class="head-right fit fit-head" data-min="9" data-max="18">
+    <div class="brand">{{ s.heading_right }}</div>
+    {% if s.promo_types %}<div class="ptype">{% for t in s.promo_types %}<span class="nb">{{ t }}{% if not loop.last %},{% endif %}</span>{% if not loop.last %} {% endif %}{% endfor %}</div>{% endif %}
+  </div>
+  {% if s.page_label %}<div class="page-label">{{ s.page_label }}</div>{% endif %}

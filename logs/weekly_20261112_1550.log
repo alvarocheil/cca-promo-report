@@ -1,0 +1,97 @@
+─────────────────────────────────────────────────────────── weekly 2026-W45 · 2026-11-12 15:50 EST ────────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────────────────────────── extract ───────────────────────────────────────────────────────────────────────────
+┌──────┬────────────────┬────────────┬────────────────┬───────────┬────────────────────────────────────────────────────────────────────────┐
+│ País │ Retailer       │ Marca      │ Estado         │ Productos │ Detalle                                                                │
+├──────┼────────────────┼────────────┼────────────────┼───────────┼────────────────────────────────────────────────────────────────────────┤
+│ PA   │ MAC STORE      │ Apple      │ manual_pending │ 0         │ manual mode -> drop screenshots in runs/2026-W45/manual/PA_macstore_Ap │
+│ PA   │ MAS MOVIL      │ Samsung    │ ok             │ 6         │                                                                        │
+│ PA   │ MAS MOVIL      │ Apple      │ ok             │ 6         │                                                                        │
+│ PA   │ MAS MOVIL      │ Honor      │ ok             │ 6         │                                                                        │
+│ PA   │ MAS MOVIL      │ Motorola   │ ok             │ 4         │                                                                        │
+│ PA   │ PANAFOTO       │ Samsung    │ blocked        │ 0         │ blocked: anti-bot (captcha) -> drop screenshots in runs/2026-W45/manua │
+│ PA   │ PANAFOTO       │ Apple      │ empty          │ 0         │ no product cards found (empty listing or selector needed)              │
+│ PA   │ PANAFOTO       │ Honor      │ ok             │ 3         │                                                                        │
+│ PA   │ PANAFOTO       │ Motorola   │ empty          │ 0         │ no product cards found (empty listing or selector needed)              │
+│ PA   │ TIGO           │ Samsung    │ blocked        │ 0         │ blocked: robots.txt HTTP 403: access denied to automated clients -> dr │
+│ PA   │ TIGO           │ Apple      │ blocked        │ 0         │ blocked: robots.txt HTTP 403: access denied to automated clients -> dr │
+│ PA   │ TIGO           │ Honor      │ blocked        │ 0         │ blocked: robots.txt HTTP 403: access denied to automated clients -> dr │
+│ PA   │ TIGO           │ Motorola   │ blocked        │ 0         │ blocked: robots.txt HTTP 403: access denied to automated clients -> dr │
+│ CR   │ CLARO          │ Samsung    │ ok             │ 6         │                                                                        │
+│ CR   │ CLARO          │ Apple      │ ok             │ 4         │                                                                        │
+│ CR   │ CLARO          │ Honor      │ empty          │ 0         │ no products of this brand on the page                                  │
+│ CR   │ CLARO          │ Motorola   │ ok             │ 3         │                                                                        │
+│ CR   │ CLARO          │ Samsung    │ ok             │ 1         │                                                                        │
+│ CR   │ GOLLO          │ Samsung    │ blocked        │ 0         │ blocked: robots.txt HTTP 403: access denied to automated clients -> dr │
+│ CR   │ GOLLO          │ Apple      │ blocked        │ 0         │ blocked: robots.txt HTTP 403: access denied to automated clients -> dr │
+│ CR   │ GOLLO          │ Honor      │ blocked        │ 0         │ blocked: robots.txt HTTP 403: access denied to automated clients -> dr │
+│ CR   │ GOLLO          │ Motorola   │ blocked        │ 0         │ blocked: robots.txt HTTP 403: access denied to automated clients -> dr │
+│ CR   │ KOLBI          │ Samsung    │ manual_pending │ 0         │ manual mode -> drop screenshots in runs/2026-W45/manual/CR_kolbi_Samsu │
+│ CR   │ KOLBI          │ Apple      │ manual_pending │ 0         │ manual mode -> drop screenshots in runs/2026-W45/manual/CR_kolbi_Apple │
+│ CR   │ KOLBI          │ Honor      │ manual_pending │ 0         │ manual mode -> drop screenshots in runs/2026-W45/manual/CR_kolbi_Honor │
+│ CR   │ KOLBI          │ Motorola   │ manual_pending │ 0         │ manual mode -> drop screenshots in runs/2026-W45/manual/CR_kolbi_Motor │
+│ CR   │ LIBERTY        │ Samsung    │ ok             │ 6         │                                                                        │
+│ CR   │ LIBERTY        │ Apple      │ ok             │ 6         │                                                                        │
+│ CR   │ LIBERTY        │ Honor      │ ok             │ 6         │                                                                        │
+│ CR   │ LIBERTY        │ Motorola   │ ok             │ 6         │                                                                        │
+│ CR   │ MONGE          │ Samsung    │ ok             │ 5         │                                                                        │
+│ CR   │ MONGE          │ Apple      │ ok             │ 5         │                                                                        │
+│ CR   │ MONGE          │ Honor      │ ok             │ 5         │                                                                        │
+│ CR   │ MONGE          │ Motorola   │ ok             │ 5         │                                                                        │
+│ CR   │ Samsung.com CR │ Samsung    │ ok             │ 1         │                                                                        │
+│ EC   │ CLARO          │ Samsung    │ manual_pending │ 0         │ manual mode -> drop screenshots in runs/2026-W45/manual/EC_claro_Samsu │
+│ EC   │ CLARO          │ Apple      │ manual_pending │ 0         │ manual mode -> drop screenshots in runs/2026-W45/manual/EC_claro_Apple │
+│ EC   │ CLARO          │ Honor      │ manual_pending │ 0         │ manual mode -> drop screenshots in runs/2026-W45/manual/EC_claro_Honor │
+│ EC   │ CLARO          │ Motorola   │ manual_pending │ 0         │ manual mode -> drop screenshots in runs/2026-W45/manual/EC_claro_Motor │
+│ EC   │ CLARO          │ Apple      │ ok             │ 1         │                                                                        │
+│ EC   │ TIGO           │ Samsung    │ ok             │ 5         │                                                                        │
+│ EC   │ TIGO           │ Apple      │ ok             │ 2         │                                                                        │
+│ EC   │ TIGO           │ Honor      │ ok             │ 3         │                                                                        │
+│ EC   │ TIGO           │ Motorola   │ empty          │ 0         │ no products of this brand on the page                                  │
+│ PY   │ Bristol        │ Samsung    │ ok             │ 3         │                                                                        │
+│ PY   │ Bristol        │ Apple      │ ok             │ 3         │                                                                        │
+│ PY   │ Bristol        │ Honor      │ ok             │ 3         │                                                                        │
+│ PY   │ Bristol        │ Motorola   │ ok             │ 2         │                                                                        │
+│ PY   │ Inverfin       │ Samsung    │ ok             │ 2         │                                                                        │
+│ PY   │ Inverfin       │ Apple      │ ok             │ 3         │                                                                        │
+│ PY   │ Inverfin       │ Honor      │ ok             │ 3         │                                                                        │
+│ PY   │ Inverfin       │ Motorola   │ empty          │ 0         │  · products.json failed (HTTPStatusError): DOM fallback                │
+│ PY   │ Tupi           │ Samsung    │ ok             │ 6         │                                                                        │
+│ PY   │ Tupi           │ Apple      │ ok             │ 6         │                                                                        │
+│ PY   │ Tupi           │ Honor      │ ok             │ 3         │                                                                        │
+│ PY   │ Tupi           │ Motorola   │ empty          │ 0         │ no products of this brand on the page                                  │
+│ UY   │ Cover Company  │ Samsung    │ ok             │ 6         │                                                                        │
+│ UY   │ Cover Company  │ Apple      │ ok             │ 6         │                                                                        │
+│ UY   │ Cover Company  │ Honor      │ ok             │ 6         │                                                                        │
+│ UY   │ Cover Company  │ Motorola   │ ok             │ 6         │                                                                        │
+│ UY   │ Mercado Libre  │ (campaign) │ manual_pending │ 0         │ optional: banner + caption.txt in runs/2026-W45/manual/UY_mercadolibre │
+│ UY   │ Mercado Libre  │ Samsung    │ manual_pending │ 0         │ manual mode -> drop screenshots in runs/2026-W45/manual/UY_mercadolibr │
+│ UY   │ Mercado Libre  │ Apple      │ manual_pending │ 0         │ manual mode -> drop screenshots in runs/2026-W45/manual/UY_mercadolibr │
+│ UY   │ Mercado Libre  │ Honor      │ manual_pending │ 0         │ manual mode -> drop screenshots in runs/2026-W45/manual/UY_mercadolibr │
+│ UY   │ Mercado Libre  │ Motorola   │ manual_pending │ 0         │ manual mode -> drop screenshots in runs/2026-W45/manual/UY_mercadolibr │
+└──────┴────────────────┴────────────┴────────────────┴───────────┴────────────────────────────────────────────────────────────────────────┘
+data.json C:\Users\Cheil BI\Documents\Desarrollos de Programa\CCA Competitor Promo Report\cca-promo-report\runs\2026-W45\data.json · 36 slides
+──────────────────────────────────────────────────────────────────────────── build ────────────────────────────────────────────────────────────────────────────
+PDF C:\Users\Cheil BI\Documents\Desarrollos de Programa\CCA Competitor Promo 
+Report\cca-promo-report\runs\2026-W45\CCA_Consolidated_Competitors_Report-Week45.pdf · 48 pages · fit rounds 1
+16 review flags
+  • PY · Bristol · Motorola · Moto G06 256 GB: installments_mismatch:1,635,000.00_vs_1,029,000.00
+  • PY · Tupi · Samsung · Galaxy S26 256 GB: installments_mismatch:10,665,000.00_vs_5,959,000.00
+  • PY · Tupi · Samsung · Galaxy A57 256 GB: installments_mismatch:7,845,000.00_vs_3,235,000.00
+  • PY · Tupi · Samsung · Galaxy S26 Cobalt Violet 512 GB: installments_mismatch:12,615,000.00_vs_7,039,000.00
+  • PY · Tupi · Samsung · Galaxy S26 Plus 256 GB: installments_mismatch:11,640,000.00_vs_6,625,000.00
+  • PY · Tupi · Samsung · Galaxy Z Flip 8 256 GB: installments_mismatch:15,315,000.00_vs_7,965,000.00
+  • PY · Tupi · Samsung · Galaxy S26 Plus 512 GB: installments_mismatch:15,135,000.00_vs_8,519,000.00
+  • PY · Tupi · Apple · iPhone 13 Pro 128 GB: installments_mismatch:6,960,000.00_vs_4,066,000.00
+  • PY · Tupi · Apple · iPhone 17 Pro Max 512 GB: installments_mismatch:45,390,000.00_vs_11,935,000.00
+  • PY · Tupi · Apple · iPhone 17 Pro Max 1 TB: installments_mismatch:25,695,000.00_vs_15,024,000.00
+  • PY · Tupi · Apple · iPhone 18 Pro Max 2 TB: installments_mismatch:42,705,000.00_vs_24,974,000.00
+  • PY · Tupi · Apple · iPhone 18 Pro Max 256 GB: installments_mismatch:22,800,000.00_vs_13,086,000.00
+  • PY · Tupi · Apple · iPhone 18 Pro 256 GB: installments_mismatch:22,590,000.00_vs_13,208,000.00
+  • PY · Tupi · Honor · Honor X5C Plus 256 GB: installments_mismatch:2,385,000.00_vs_969,000.00
+  • PY · Tupi · Honor · Honor X7D 256 GB: installments_mismatch:3,375,000.00_vs_1,469,000.00
+  • PY · Tupi · Honor · Honor X5C Plus Cyan 256 GB: installments_mismatch:2,385,000.00_vs_990,000.00
+run_report.md C:\Users\Cheil BI\Documents\Desarrollos de Programa\CCA Competitor Promo Report\cca-promo-report\runs\2026-W45\run_report.md
+CCA Competitor's Promotions Report – Week 45 (cut-off November 6th, 2026)
+  to: vergara.a@cheil.com
+  attachments: CCA_Consolidated_Competitors_Report-Week45.pdf · preview C:\Users\Cheil BI\Documents\Desarrollos de Programa\CCA Competitor Promo 
+Report\cca-promo-report\runs\2026-W45\email_preview.html

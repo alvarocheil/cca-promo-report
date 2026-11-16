@@ -1,0 +1,14 @@
+country: CR
+retailer_name: GOLLO
+type: retailer
+base_url: https://www.gollo.com
+currency: CRC
+locale: es-CR
+row_format: cr_default
+notes: "robots.txt disallows /*marca= : use the category page and filter by product name."
+brands:
+  Samsung:  {urls: ["https://www.gollo.com/c/telefonia/celulares-y-telefonos/celulares"], mode: dom, capture: listing, filter_by_name: true}
+  Apple:    {urls: ["https://www.gollo.com/c/telefonia/celulares-y-telefonos/celulares"], mode: dom, capture: listing, filter_by_name: true}
+  Honor:    {urls: ["https://www.gollo.com/c/telefonia/celulares-y-telefonos/celulares"], mode: dom, capture: listing, filter_by_name: true}
+  Motorola: {urls: ["https://www.gollo.com/c/telefonia/celulares-y-telefonos/celulares"], mode: dom, capture: listing, filter_by_name: true}
+pre_actions: [{close_cookies: true}, {wait_for: networkidle}, {scroll: progressive}]

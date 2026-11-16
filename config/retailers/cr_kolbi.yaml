@@ -1,0 +1,15 @@
+country: CR
+retailer_name: KOLBI
+type: operator
+base_url: https://www.kolbi.cr
+currency: CRC
+locale: es-CR
+row_format: cr_default
+render_wait_seconds: 75
+notes: "Phone catalogue stays on skeleton loaders for an automated browser (75 s wait, W45): manual mode."
+brands:
+  Samsung:  {urls: ["https://www.kolbi.cr/wps/portal/kolbi/personas/dispositivos/telefonos"], mode: manual, capture: cards}
+  Apple:    {urls: ["https://www.kolbi.cr/wps/portal/kolbi/personas/dispositivos/telefonos"], mode: manual, capture: cards}
+  Honor:    {urls: ["https://www.kolbi.cr/wps/portal/kolbi/personas/dispositivos/telefonos"], mode: manual, capture: cards}
+  Motorola: {urls: ["https://www.kolbi.cr/wps/portal/kolbi/personas/dispositivos/telefonos"], mode: manual, capture: cards}
+pre_actions: [{close_cookies: true}, {wait_for: networkidle}, {scroll: progressive}]

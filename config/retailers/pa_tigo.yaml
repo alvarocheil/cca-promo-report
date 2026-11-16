@@ -1,0 +1,14 @@
+country: PA
+retailer_name: TIGO
+type: operator
+base_url: https://www.tigo.com.pa
+currency: USD
+locale: es-PA
+row_format: pa_operator
+notes: "Plain HTTP answers 403; real browser works. Catalogues on compras.tigo.com.pa."
+brands:
+  Samsung:  {urls: ["https://compras.tigo.com.pa/catalogo/postpago"], mode: dom, capture: listing, filter_by_name: true, selectors: {product_card: '.deviceBox', name: '.modelo__deviceBox'}}
+  Apple:    {urls: ["https://compras.tigo.com.pa/catalogo/postpago"], mode: dom, capture: listing, filter_by_name: true, selectors: {product_card: '.deviceBox', name: '.modelo__deviceBox'}}
+  Honor:    {urls: ["https://compras.tigo.com.pa/catalogo/postpago"], mode: dom, capture: listing, filter_by_name: true, selectors: {product_card: '.deviceBox', name: '.modelo__deviceBox'}}
+  Motorola: {urls: ["https://compras.tigo.com.pa/catalogo/postpago"], mode: dom, capture: listing, filter_by_name: true, selectors: {product_card: '.deviceBox', name: '.modelo__deviceBox'}}
+pre_actions: [{close_cookies: true}, {wait_for: networkidle}, {scroll: progressive}]

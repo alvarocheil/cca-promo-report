@@ -1,0 +1,117 @@
+{
+  "week": "2026-W44",
+  "cutoff_date": "2026-10-30",
+  "countries": {
+    "CR": {
+      "insights": {
+        "retailers": ["CLARO", "LIBERTY", "MONGE", "GOLLO", "KOLBI"],
+        "cells": {
+          "Samsung": {
+            "CLARO": "Monthly installment plans across Galaxy A, S and Z Series.",
+            "LIBERTY": "Monthly installment plans and discounts on selected Galaxy models.",
+            "MONGE": "Monthly installment plans and discounts on selected models, including S26 Ultra, A57 and A56.",
+            "GOLLO": "Monthly installment plans and competitive pricing.",
+            "KOLBI": "**Bundle promotion:** Free Galaxy Buds3 FE with the purchase of Galaxy S26 FE. Monthly installment options."
+          },
+          "Apple": {
+            "LIBERTY": "iPhone 17 and 18 Series promotions, with monthly installment plans on selected models.",
+            "MONGE": "Discounts on selected iPhone models, including iPhone 17e, 17 and Pro Series. Financing options available."
+          },
+          "Motorola": {
+            "LIBERTY": "Discounts on selected Moto G, Edge 70 and Razr 70 models. **Bundle promotions:** Free protective cases and chargers with selected devices.",
+            "MONGE": "Discounts on selected Moto G, Edge 70 and Razr 70 models."
+          }
+        }
+      }
+    },
+    "EC": {
+      "insights": {
+        "retailers": ["CLARO", "TIGO"],
+        "cells": {
+          "Samsung": {
+            "CLARO": "**Bundle promotion:** Free charger and protective case with selected devices.",
+            "TIGO": "**Special discounts** for mobile plan renewals."
+          },
+          "Apple": {
+            "CLARO": "**Branding campaign:** Communication supporting the new iPhone 18 Pro. **Promotion:** Special offer on the iPhone Air 256GB."
+          },
+          "Honor": {
+            "TIGO": "**Special discounts** for mobile plan renewals."
+          }
+        }
+      }
+    },
+    "PA": {"retailer_order": ["MAS MOVIL", "TIGO", "PANAFOTO", "MAC STORE"]}
+  },
+  "groups": [
+    {
+      "country": "PA", "retailer": "TIGO", "brand": "Samsung",
+      "promo_types": ["Monthly Payment"], "capture": "listing", "row_format": "pa_operator",
+      "products": [
+        {"model_name": "Galaxy Z Flip8", "downpayment": 352.00, "monthly_payment": 37.00, "installments_n": 24, "price_final": 1240.00},
+        {"model_name": "Galaxy S26 Ultra", "downpayment": 245.55, "monthly_payment": 35.00, "installments_n": 24, "price_final": 1585.55},
+        {"model_name": "Galaxy A57", "downpayment": 168.05, "monthly_payment": 16.00, "installments_n": 24, "price_final": 552.00},
+        {"model_name": "Galaxy A17", "downpayment": 70.95, "monthly_payment": 9.00, "installments_n": 18, "price_final": 232.95}
+      ]
+    },
+    {
+      "country": "PA", "retailer": "PANAFOTO", "brand": "Samsung",
+      "promo_types": ["Monthly Payment"], "capture": "cards", "row_format": "pa_retailer",
+      "products": [
+        {"model_name": "Galaxy A17", "price_before": 269.95, "price_final": 199.95, "monthly_payment": 11.89, "installments_n": 18},
+        {"model_name": "Galaxy S26", "price_before": 329.95, "price_final": 299.95, "monthly_payment": 17.83, "installments_n": 18},
+        {"model_name": "Galaxy A57", "price_before": 599.95, "price_final": 509.95, "monthly_payment": 30.31, "installments_n": 18}
+      ]
+    },
+    {
+      "country": "CR", "retailer": "KOLBI", "brand": "Samsung",
+      "promo_types": ["Bundle promotion", "Price Discount"], "capture": "cards", "row_format": "cr_default",
+      "products": [
+        {"model_name": "Galaxy S26 FE", "price_final": 477000, "bundle_gift": "Galaxy Buds3 FE"},
+        {"model_name": "Galaxy S26 Ultra", "price_final": 904000, "badge_text": "Price discount"},
+        {"model_name": "Galaxy S26+", "price_final": 679000, "badge_text": "Price discount"},
+        {"model_name": "Galaxy S26", "price_final": 537000, "badge_text": "Price discount"},
+        {"model_name": "Galaxy S25 FE", "price_final": 457000, "badge_text": "Price discount"}
+      ]
+    },
+    {
+      "kind": "branding", "country": "CR", "retailer": "Samsung.com CR / CLARO", "brand": "Samsung",
+      "promo_types": ["Branding"],
+      "banners": [
+        {"label": "samsung.com CR – Galaxy Tab S12 Ultra, \"24 cuotas\""},
+        {"label": "Claro CR – \"¡Tu nuevo equipo tecnológico está aquí!\""}
+      ]
+    },
+    {
+      "country": "EC", "retailer": "TIGO", "brand": "Samsung",
+      "promo_types": ["Special discount"], "capture": "cards", "row_format": "ec_tigo",
+      "products": [
+        {"model_name": "Galaxy A57", "price_final": 802.33, "installments_n": 18},
+        {"model_name": "Galaxy S26 Ultra", "price_final": 1548.99, "installments_n": 18},
+        {"model_name": "Galaxy S26", "price_final": 1143.33, "installments_n": 18},
+        {"model_name": "Galaxy S26 Plus", "price_final": 1402.33, "installments_n": 18},
+        {"model_name": "Galaxy A07", "price_final": 129.00, "installments_n": 18}
+      ]
+    },
+    {
+      "country": "PY", "retailer": "Tupi", "brand": "Samsung",
+      "promo_types": ["Price Discount", "Monthly Payment"], "capture": "cards", "row_format": "py_default",
+      "caption": "Cyberday, November 2–4, 2026. Discounts are based on the previous cash price.",
+      "products": [
+        {"model_name": "Galaxy A37 256 GB", "price_before": 2669000, "discount_pct": 14, "monthly_payment": 230000, "installments_n": 15, "price_final": 2299000},
+        {"model_name": "Galaxy A17 256 GB", "price_before": 2299000, "discount_pct": 35, "monthly_payment": 149000, "installments_n": 15, "price_final": 1489000},
+        {"model_name": "Galaxy S26 Ultra 256 GB violet", "price_before": 8854000, "discount_pct": 22, "monthly_payment": 688000, "installments_n": 15, "price_final": 6890000}
+      ]
+    },
+    {
+      "country": "UY", "retailer": "Mercado Libre", "brand": "Samsung",
+      "promo_types": ["Price Discount", "Monthly Payment"], "capture": "cards", "row_format": "uy_ml",
+      "caption": "Ciberlunes 2026. Prices and coupon prices in USD. Installments in UYU.",
+      "products": [
+        {"model_name": "Galaxy S26 256 GB", "discount_pct": 36, "coupon_price": 798.33, "monthly_payment": 3665, "installments_n": 10, "secondary_currency": "UYU", "price_final": 885.29},
+        {"model_name": "Galaxy S25 Ultra 512 GB", "discount_pct": 20, "coupon_price": 1162.77, "monthly_payment": 4963, "installments_n": 10, "secondary_currency": "UYU", "price_final": 1199},
+        {"model_name": "Galaxy A57 256 GB", "discount_pct": 25, "coupon_price": 542.77, "monthly_payment": 2397, "installments_n": 10, "secondary_currency": "UYU", "price_final": 579}
+      ]
+    }
+  ]
+}

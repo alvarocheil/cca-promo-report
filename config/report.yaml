@@ -1,0 +1,70 @@
+# Report-level configuration. Country order here = order in the PDF.
+week: auto                        # auto = current ISO week (timezone below), or e.g. 2026-W45
+cutoff_date: auto                 # auto = Friday of that week, rendered as "November 13th, 2026"
+timezone: America/Panama
+insights_provider: codex          # codex | rules  (codex exec -s read-only, rules as fallback)
+min_delay_seconds: 3              # politeness floor between page loads on one domain
+page_timeout_seconds: 45
+
+# Weekly e-mail (sent from the Outlook profile of this PC, no stored password).
+# Scheduled run: Fridays 09:00 -> e-mail at send_at (scripts/register_task.ps1).
+mail:
+  enabled: true
+  to: [vergara.a@cheil.com]       # first test: only to the report owner
+  cc: []
+  alert_to: []                    # failed runs; empty = `to`
+  account: vergara.a@cheil.com    # Outlook sender (same as the Sprint Report)
+  send_at: "10:00"                # America/Panama
+  include_run_status: true        # internal coverage section; set false for stakeholders
+  max_attachment_mb: 18
+
+countries:
+  - code: PA
+    name: Panama
+    currency: USD
+    locale: es-PA
+    timezone: America/Panama
+    group_by: brand
+    products_per_page: 6
+    event_caption: ""
+    retailer_order: [MAS MOVIL, TIGO, PANAFOTO, MAC STORE]
+  - code: CR
+    name: Costa Rica
+    currency: CRC
+    locale: es-CR
+    timezone: America/Costa_Rica
+    group_by: brand
+    products_per_page: 6
+    event_caption: ""
+    retailer_order: [CLARO, LIBERTY, MONGE, GOLLO, KOLBI, Samsung.com CR]
+  - code: EC
+    name: Ecuador
+    currency: USD
+    locale: es-EC
+    timezone: America/Guayaquil
+    group_by: brand
+    products_per_page: 6
+    event_caption: ""
+    retailer_order: [CLARO, TIGO]
+  - code: PY
+    name: Paraguay
+    currency: PYG
+    locale: es-PY
+    timezone: America/Asuncion
+    group_by: retailer
+    products_per_page: 3
+    event_caption: ""
+    retailer_order: [Bristol, Tupi, Inverfin]
+    model_with_storage: true
+    insights_bullets: true
+  - code: UY
+    name: Uruguay
+    currency: USD
+    locale: es-UY
+    timezone: America/Montevideo
+    group_by: retailer
+    products_per_page: 3
+    event_caption: ""
+    retailer_order: [Cover Company, Mercado Libre]
+    model_with_storage: true
+    insights_bullets: true

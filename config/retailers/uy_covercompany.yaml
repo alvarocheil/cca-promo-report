@@ -1,0 +1,15 @@
+country: UY
+retailer_name: Cover Company
+type: distributor
+base_url: https://covercompany.com.uy
+currency: USD
+locale: es-UY
+row_format: uy_cover
+pages_per_brand_max: 2
+notes: "Shopify: data from /collections/{handle}/products.json; Playwright only for screenshots."
+brands:
+  Samsung:  {urls: ["https://covercompany.com.uy/collections/celulares-samsung"], mode: shopify, capture: cards, max_products: 6, selectors: {product_card: '.product-card__wrapper'}}
+  Apple:    {urls: ["https://covercompany.com.uy/collections/apple/CELULARES"], mode: shopify, capture: cards, max_products: 6, selectors: {product_card: '.product-card__wrapper'}}
+  Honor:    {urls: ["https://covercompany.com.uy/collections/celulares-honor"], mode: shopify, capture: cards, max_products: 6, selectors: {product_card: '.product-card__wrapper'}}
+  Motorola: {urls: ["https://covercompany.com.uy/collections/motorola"], mode: shopify, capture: cards, max_products: 6, selectors: {product_card: '.product-card__wrapper'}}
+pre_actions: [{close_cookies: true}, {wait_for: networkidle}, {scroll: progressive}]

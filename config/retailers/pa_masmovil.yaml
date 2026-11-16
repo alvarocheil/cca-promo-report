@@ -1,0 +1,14 @@
+country: PA
+retailer_name: MAS MOVIL
+type: operator
+base_url: https://www.masmovilpanama.com
+currency: USD
+locale: es-PA
+row_format: pa_operator
+notes: "100% JavaScript page: needs Playwright render."
+brands:
+  Samsung:  {urls: ["https://www.masmovilpanama.com/equipos/celulares-postpago"], mode: dom, capture: listing, filter_by_name: true, selectors: {product_card: '.deviceCardContainer'}}
+  Apple:    {urls: ["https://www.masmovilpanama.com/equipos/celulares-postpago"], mode: dom, capture: listing, filter_by_name: true, selectors: {product_card: '.deviceCardContainer'}}
+  Honor:    {urls: ["https://www.masmovilpanama.com/equipos/celulares-postpago"], mode: dom, capture: listing, filter_by_name: true, selectors: {product_card: '.deviceCardContainer'}}
+  Motorola: {urls: ["https://www.masmovilpanama.com/equipos/celulares-postpago"], mode: dom, capture: listing, filter_by_name: true, selectors: {product_card: '.deviceCardContainer'}}
+pre_actions: [{close_cookies: true}, {wait_for: networkidle}, {scroll: progressive}]

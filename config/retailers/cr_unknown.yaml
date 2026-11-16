@@ -1,0 +1,14 @@
+# W44 had a CR Samsung 'Monthly Payment' slide without retailer name
+# (cards with 'Añadir al carrito' and 'Hasta 24 cuotas'). Retailer still unidentified.
+# Set retailer_name/base_url and enabled: true once known; until then manual only.
+country: CR
+retailer_name: (unidentified)
+type: retailer
+base_url: https://example.invalid
+currency: CRC
+locale: es-CR
+row_format: cr_default
+enabled: false
+manual_only: true
+brands:
+  Samsung: {mode: manual, capture: listing}

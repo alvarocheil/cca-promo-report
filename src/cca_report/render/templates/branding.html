@@ -1,0 +1,7 @@
+<section class="slide branding" data-slide-id="{{ s.id }}" data-group-id="{{ s.group_id }}">
+{% include "_header.html" %}
+  <div class="banners">
+    {% for b in s.banners %}<figure><img src="{{ b.screenshot }}" alt="{{ b.label }}">{% if b.label %}<figcaption class="fit" data-min="8" data-max="10">{{ b.label }}</figcaption>{% endif %}</figure>{% endfor %}
+  </div>
+  {% if s.caption %}<div class="caption fit" data-min="8" data-max="10">{{ s.caption }}</div>{% endif %}
+</section>

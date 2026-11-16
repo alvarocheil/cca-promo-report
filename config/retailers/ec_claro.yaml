@@ -1,0 +1,16 @@
+country: EC
+retailer_name: CLARO
+type: operator
+base_url: https://www.claro.com.ec
+currency: USD
+locale: es-EC
+row_format: ec_claro
+notes: "catalogo.claro.com.ec answers 403 to robots.txt: catalogue in manual mode; home used for Branding."
+brands:
+  Samsung:  {mode: manual, capture: cards}
+  Apple:    {mode: manual, capture: cards}
+  Honor:    {mode: manual, capture: cards}
+  Motorola: {mode: manual, capture: cards}
+branding:
+  - {brand: Apple, urls: ["https://www.claro.com.ec/personas/"], capture: banner}
+pre_actions: [{close_cookies: true}, {wait_for: networkidle}, {scroll: progressive}]

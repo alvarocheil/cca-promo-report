@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CCA Consolidated Competitors Report – Week {{ week_number }}</title>
+<style>
+{% for f in fonts %}
+@font-face {
+  font-family: "{{ f.family }}";
+  src: url("{{ f.url }}") format("{{ f.format }}");
+  font-weight: {{ f.weight }};
+  font-style: normal;
+  font-display: block;
+  {% if f.unicode_range %}unicode-range: {{ f.unicode_range }};{% endif %}
+}
+{% endfor %}
+{{ css | safe }}
+</style>
+</head>
+<body>
+{% for s in slides %}
+{% include s.kind ~ ".html" %}
+{% endfor %}
+</body>
+</html>

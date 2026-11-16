@@ -1,0 +1,14 @@
+country: CR
+retailer_name: LIBERTY
+type: operator
+base_url: https://libertycr.com
+currency: CRC
+locale: es-CR
+row_format: cr_default
+notes: "Brand pages are tabbed landings (1 visible card): use the device store /equipos-celulares/tienda and filter by name."
+brands:
+  Samsung:  {urls: ["https://libertycr.com/equipos-celulares/tienda"], mode: dom, capture: listing, filter_by_name: true}
+  Apple:    {urls: ["https://libertycr.com/equipos-celulares/tienda"], mode: dom, capture: listing, filter_by_name: true}
+  Honor:    {urls: ["https://libertycr.com/equipos-celulares/tienda"], mode: dom, capture: listing, filter_by_name: true}
+  Motorola: {urls: ["https://libertycr.com/equipos-celulares/tienda"], mode: dom, capture: listing, filter_by_name: true}
+pre_actions: [{close_cookies: true}, {wait_for: networkidle}, {scroll: progressive}]

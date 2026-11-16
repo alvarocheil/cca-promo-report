@@ -1,0 +1,10 @@
+country: CR
+retailer_name: Samsung.com CR
+type: brand
+base_url: https://shop.samsung.com/latin/cac/cr/
+currency: CRC
+locale: es-CR
+row_format: cr_default
+notes: "Branding only (home hero banner)."
+branding:
+  - {brand: Samsung, urls: ["https://shop.samsung.com/latin/cac/cr/"], capture: banner}

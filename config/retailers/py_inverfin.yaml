@@ -1,0 +1,15 @@
+country: PY
+retailer_name: Inverfin
+type: retailer
+base_url: https://inverfin.com.py
+currency: PYG
+locale: es-PY
+row_format: py_default
+preferred_installments: 15
+notes: "Shopify store: data from products.json. Samsung/Motorola have no own collection: filter smartphones by name."
+brands:
+  Samsung:  {urls: ["https://inverfin.com.py/collections/smartphones"], mode: shopify, capture: cards, max_products: 3, filter_by_name: true}
+  Apple:    {urls: ["https://inverfin.com.py/collections/iphone-estandar"], mode: shopify, capture: cards, max_products: 3}
+  Honor:    {urls: ["https://inverfin.com.py/collections/celulares-honor"], mode: shopify, capture: cards, max_products: 3}
+  Motorola: {urls: ["https://inverfin.com.py/collections/smartphones"], mode: shopify, capture: cards, max_products: 3, filter_by_name: true}
+pre_actions: [{close_cookies: true}, {wait_for: networkidle}, {scroll: progressive}]

@@ -1,0 +1,23 @@
+{% set t = s.insights %}
+<section class="slide insights" data-slide-id="{{ s.id }}">
+  <div class="panel">
+    <div class="panel-title">{{ t.title }}</div>
+    {% if t.subtitle %}<div class="panel-subtitle">{{ t.subtitle }}</div>{% endif %}
+    <div class="ins-body fit" data-min="8" data-max="12">
+      <table>
+        <colgroup><col style="width:1.15in">{% for r in t.retailers %}<col>{% endfor %}</colgroup>
+        <thead><tr><th></th>{% for r in t.retailers %}<th>{{ r }}</th>{% endfor %}</tr></thead>
+        <tbody>
+        {% for brand, cells in t.rows %}
+          <tr><th>{{ brand }}</th>{% for c in cells %}<td{% if c == "No information available." %} class="empty"{% endif %}>{{ c | md_bold }}</td>{% endfor %}</tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      {% if t.bullets %}
+      <div class="bullets">
+        {% for brand, items in t.bullets %}<div><h3>Key insights – {{ brand }}</h3><ul>{% for b in items %}<li>{{ b | md_bold }}</li>{% endfor %}</ul></div>{% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

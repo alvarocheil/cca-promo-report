@@ -1,0 +1,16 @@
+country: UY
+retailer_name: Mercado Libre
+type: marketplace
+base_url: https://www.mercadolibre.com.uy
+currency: USD
+locale: es-UY
+row_format: uy_ml
+pages_per_brand_max: 2
+manual_only: true
+campaign_overview: true
+notes: "robots.txt forbids automated access and there is no API token: manual mode (runs/<week>/manual/UY_mercadolibre_<Brand>/)."
+brands:
+  Samsung:  {mode: manual, capture: cards, max_products: 6}
+  Apple:    {mode: manual, capture: cards, max_products: 6}
+  Honor:    {mode: manual, capture: cards, max_products: 6}
+  Motorola: {mode: manual, capture: cards, max_products: 6}

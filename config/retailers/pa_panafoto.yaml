@@ -1,0 +1,14 @@
+country: PA
+retailer_name: PANAFOTO
+type: retailer
+base_url: https://www.panafoto.com
+currency: USD
+locale: es-PA
+row_format: pa_retailer
+notes: "/guia-de-compra/celulares.html showed a CAPTCHA in Phase 0; brand pages to be verified."
+brands:
+  Samsung:  {urls: ["https://www.panafoto.com/categorias/marcas/samsung/celulares-y-tablets/celulares.html"], mode: dom, capture: cards, max_products: 3, selectors: {product_card: '.result-content'}}
+  Apple:    {urls: ["https://www.panafoto.com/marca/apple/iphone.html"], mode: dom, capture: cards, max_products: 3, selectors: {product_card: '.result-content'}}
+  Honor:    {urls: ["https://www.panafoto.com/marca/honor/celulares.html"], mode: dom, capture: cards, max_products: 3, selectors: {product_card: '.result-content'}}
+  Motorola: {urls: ["https://www.panafoto.com/marca/motorola/celulares.html"], mode: dom, capture: cards, max_products: 3, selectors: {product_card: '.result-content'}}
+pre_actions: [{close_cookies: true}, {wait_for: networkidle}, {scroll: progressive}]

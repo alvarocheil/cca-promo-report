@@ -1,0 +1,19 @@
+<section class="slide detail" data-slide-id="{{ s.id }}" data-group-id="{{ s.group_id }}">
+{% include "_header.html" %}
+  {% if s.capture == "listing" %}
+  <div class="shots listing"><img src="{{ s.listing_image }}" alt="listing"></div>
+  {% else %}
+  <div class="shots cards">
+    {% for c in s.columns %}<div class="shot"><img src="{{ c.screenshot }}" alt="{{ c.model }}"></div>{% endfor %}
+  </div>
+  {% endif %}
+  <div class="table-box fit{% if not s.caption %} no-caption{% endif %}" data-min="8" data-max="11">
+    <table class="summary">
+      <colgroup>{% for c in s.columns %}<col>{% endfor %}</colgroup>
+      <tr class="r-model">{% for c in s.columns %}<td>{{ c.model }}</td>{% endfor %}</tr>
+      <tr class="r-promo">{% for c in s.columns %}<td>{% for line in c.row2 %}<span class="line">{{ line }}</span>{% if not loop.last %}<br>{% endif %}{% endfor %}</td>{% endfor %}</tr>
+      <tr class="r-price">{% for c in s.columns %}<td>{{ c.row3 }}</td>{% endfor %}</tr>
+    </table>
+  </div>
+  {% if s.caption %}<div class="caption fit" data-min="8" data-max="10">{{ s.caption }}</div>{% endif %}
+</section>

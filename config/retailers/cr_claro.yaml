@@ -1,0 +1,16 @@
+country: CR
+retailer_name: CLARO
+type: operator
+base_url: https://www.claro.cr
+currency: CRC
+locale: es-CR
+row_format: cr_default
+notes: "Prepaid catalogue has no brand filter: filter by product name."
+brands:
+  Samsung:  {urls: ["https://www.claro.cr/personas/tiendaenlinea/categories/prepago/celularesprepago"], mode: dom, capture: listing, filter_by_name: true}
+  Apple:    {urls: ["https://www.claro.cr/personas/tiendaenlinea/categories/prepago/celularesprepago"], mode: dom, capture: listing, filter_by_name: true}
+  Honor:    {urls: ["https://www.claro.cr/personas/tiendaenlinea/categories/prepago/celularesprepago"], mode: dom, capture: listing, filter_by_name: true}
+  Motorola: {urls: ["https://www.claro.cr/personas/tiendaenlinea/categories/prepago/celularesprepago"], mode: dom, capture: listing, filter_by_name: true}
+branding:
+  - {brand: Samsung, urls: ["https://www.claro.cr/personas/"], capture: banner}
+pre_actions: [{close_cookies: true}, {wait_for: networkidle}, {scroll: progressive}]

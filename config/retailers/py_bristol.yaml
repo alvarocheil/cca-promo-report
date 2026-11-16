@@ -1,0 +1,15 @@
+country: PY
+retailer_name: Bristol
+type: retailer
+base_url: https://www.bristol.com.py
+currency: PYG
+locale: es-PY
+row_format: py_default
+preferred_installments: 15
+notes: "Brand pages include non-phone products: keep phones only."
+brands:
+  Samsung:  {urls: ["https://www.bristol.com.py/samsung"], mode: dom, capture: cards, max_products: 3, filter_by_name: true}
+  Apple:    {urls: ["https://www.bristol.com.py/apple"], mode: dom, capture: cards, max_products: 3, filter_by_name: true}
+  Honor:    {urls: ["https://www.bristol.com.py/honor"], mode: dom, capture: cards, max_products: 3, filter_by_name: true}
+  Motorola: {urls: ["https://www.bristol.com.py/motorola"], mode: dom, capture: cards, max_products: 3, filter_by_name: true}
+pre_actions: [{close_cookies: true}, {wait_for: networkidle}, {scroll: progressive}]

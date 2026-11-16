@@ -1,0 +1,13 @@
+country: CR
+retailer_name: MONGE
+type: retailer
+base_url: https://www.tiendamonge.com
+currency: CRC
+locale: es-CR
+row_format: cr_default
+brands:
+  Samsung:  {urls: ["https://www.tiendamonge.com/productos/celulares-y-tablets/celulares/celulares-samsung"], mode: dom, capture: listing, max_products: 5}
+  Apple:    {urls: ["https://www.tiendamonge.com/productos/celulares-y-tablets/celulares/celulares-apple"], mode: dom, capture: listing, max_products: 5}
+  Honor:    {urls: ["https://www.tiendamonge.com/productos/celulares-y-tablets/celulares/celulares-honor"], mode: dom, capture: listing, max_products: 5}
+  Motorola: {urls: ["https://www.tiendamonge.com/productos/celulares-y-tablets/celulares/celulares-motorola"], mode: dom, capture: listing, max_products: 5}
+pre_actions: [{close_cookies: true}, {wait_for: networkidle}, {scroll: progressive}]

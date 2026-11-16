@@ -1,0 +1,11 @@
+country: PA
+retailer_name: MAC STORE
+type: reseller
+base_url: https://www.macstorepanama.com
+currency: USD
+locale: es-PA
+row_format: pa_retailer
+manual_only: true
+notes: "robots.txt forbids automated access (site unreachable in Phase 0). Drop screenshots in runs/<week>/manual/PA_macstore_Apple/."
+brands:
+  Apple: {mode: manual, capture: cards, max_products: 3}
